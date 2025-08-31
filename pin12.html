@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="pinterest-site-verification" content="<meta name="p:domain_verify" content="39cc852803874d462b3329a1e41f4213"/>" />
+  <title>Yama • Nature & AI Gallery</title>
+  <meta name="description" content="A lightweight gallery of nature and AI artwork." />
+  <meta property="og:title" content="Yama • Nature & AI Gallery" />
+  <meta property="og:description" content="A lightweight gallery of nature and AI artwork." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root{
+      --bg:#f6f7f8;
+      --card:#ffffff;
+      --text:#1d2a1f;
+      --accent:#2d572c;
+      --muted:#5f6f65;
+      --shadow:0 8px 24px rgba(0,0,0,.08);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.6;
+    }
+    header{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(6px);
+      background: rgba(246,247,248,.8);
+      border-bottom:1px solid rgba(0,0,0,.06);
+    }
+    .wrap{max-width:1100px; margin:0 auto; padding:18px 20px;}
+    .nav{
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+    }
+    .brand{font-weight:800; letter-spacing:.3px; color:var(--accent);}
+    .cta{
+      padding:10px 14px; border-radius:999px; text-decoration:none; border:1px solid var(--accent); color:var(--accent);
+    }
+    .hero{
+      text-align:center; padding:48px 20px 20px;
+    }
+    .hero h1{margin:0 0 8px; font-size:clamp(26px,4vw,40px); color:var(--accent);}
+    .hero p{color:var(--muted); margin:0 auto; max-width:720px;}
+    .grid{
+      display:grid; gap:14px;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      padding:20px;
+    }
+    .card{
+      background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); overflow:hidden;
+      display:flex; flex-direction:column;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .card:hover{ transform: translateY(-3px); box-shadow:0 12px 30px rgba(0,0,0,.12); }
+    .thumb{
+      width:100%; aspect-ratio: 4/3; object-fit:cover; background:#eaeaea;
+      display:block;
+    }
+    .content{padding:14px 14px 16px;}
+    .content h3{margin:0 0 6px; font-size:18px;}
+    .content p{margin:0; color:var(--muted); font-size:14px;}
+    footer{
+      border-top:1px solid rgba(0,0,0,.06); margin-top:32px;
+      background:#fff;
+    }
+    .footer-inner{display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between;}
+    .small{font-size:13px; color:var(--muted);}
+    .links a{color:var(--accent); text-decoration:none; margin-right:10px;}
+    /* Responsive tweaks */
+    @media (max-width:520px){
+      .cta{padding:8px 12px; font-size:14px;}
+      .grid{gap:10px; padding:12px;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">Yama • Nature × AI</div>
+      <!--  yama89117  -->
+      <a class="cta" href="https://www.pinterest.com/yama89117/" target="_blank" rel="noopener">Follow on Pinterest</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Nature & AI — a tiny gallery</h1>
+      <p>Carnation is a colorful flower that inspires us to view the world with fasination and, gratitude and confidence.</p>
+    </section>
+
+    <!-- Gallery grid: Replace the src values. You can use local files like images/photo1.jpg
+         If you keep local images, place them in the same folder as index.html -->
+    <section class="grid">
+      <article class="card">
+        <img class="thumb" src="download32.jpeg" alt="Leaf macro — AI art" />
+        <div class="content">
+          <h3>Emerald Leaves</h3>
+          <p>AI-assisted macro of morning dew.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img class="thumb" src="download (4).jpeg" alt="Waterfall valley — AI art" />
+        <div class="content">
+          <h3>Valley Falls</h3>
+          <p>Misty cascade at golden hour.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img class="thumb" src="download (15).jpeg" alt="Forest trail — AI art" />
+        <div class="content">
+          <h3>Quiet Trail</h3>
+          <p>Footpath through ancient woods.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img class="thumb" src="download (18).jpeg" alt="Bloom closeup — AI art" />
+        <div class="content">
+          <h3>Wild Bloom</h3>
+          <p>Soft petals, soft light.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="wrap" style="padding: 4px 0 22px;">
+      <p class="small">
+        Tip: To verify on Pinterest with meta tag, replace
+        <code>&lt;meta name="pinterest-site-verification" content="YOUR_PINTEREST_CODE_HERE"&gt;</code>
+        in the &lt;head&gt; with the code Pinterest gives you.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div class="small">© <span id="year"></span> Vismaya. All rights reserved.</div>
+      <div class="links">
+        <!-- Replace with your real links -->
+        <a href="https://www.pinterest.com/YOUR-USERNAME/" target="_blank" rel="noopener">Pinterest</a>
+        <a href="mailto:hello@example.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+"""
+with open("/mnt/data/index.html", "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+
